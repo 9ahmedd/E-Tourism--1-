@@ -1,0 +1,143 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Small */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.login {
+    background-image: url(/E-Tourism/Images/WhatsApp\ Image\ 2023-04-10\ at\ 6.15.13\ PM.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.login .container {
+    position: relative;
+}
+ h2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #eee;
+    font-size: 50px;
+}
+form {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.login .one {
+    position: relative;
+    
+}
+.login #ico {
+    position: absolute;
+    top: 50%;
+    transform: translate(-18%,-50%);
+    left: 18%;
+    color: rgb(201, 197, 197);
+  
+  
+}
+.login #icon {
+    position: absolute;
+        top: 50%;
+        transform: translate(-18%, -50%);
+        left: 18%;
+        color: rgb(201, 197, 197);
+}
+
+.login form input {
+        display: block;
+        width: 70%;
+        
+        margin:0 auto 25px;
+       border-radius: 5px;
+        padding: 20px 20px 20px 60px;
+        border: none;
+        background-color: #f9f9f9;
+}
+.login form input:focus {
+    outline: none;
+    caret-color: rgb(193, 75, 75);
+   
+}
+.login form [type = "submit"] {
+    background-color: rgb(193, 75, 75);
+    color: white;
+    font-weight: bold;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+}
+
+
+
+.login form [type="submit"]:hover {
+    background-color:rgb(127, 50, 50);
+}
+
+.login .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin-right: 30px;
+}
+a {
+    color:rgb(138, 34, 34) ;
+}
+
+.link-admin {
+    margin-left: 10px; 
+}

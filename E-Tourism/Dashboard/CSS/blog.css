@@ -1,0 +1,320 @@
+/* :root {
+} */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   /* font-family: 'Cairo', sans-serif; */
+   font-family: "Poppins", sans-serif;
+   background-color: var(--color-one);
+}
+*:focus {
+   outline: none;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
+
+/* SIDE BAR...........................*/
+.side-bar {
+   min-height: 100vh;
+   width: 300px;
+   box-shadow: 0 0 10px #ddd;
+   padding: 20px;
+   background-color: white;
+   z-index: 999;
+}
+.side-bar h3 {
+   text-align: center;
+   margin-bottom: 40px;
+   position: relative;
+   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+   .side-bar h3::before,
+   .side-bar h3::after {
+      content: "";
+      position: absolute;
+      transform: translateX(-50%);
+      background-color: black;
+      left: 50%;
+   }
+   .side-bar h3::before {
+      width: 110px;
+      height: 2px;
+      bottom: -10px;
+   }
+   .side-bar h3::after {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      bottom: -19px;
+      border: 4px solid white;
+   }
+}
+.side-bar ul li a {
+   display: flex;
+   color: black;
+   padding: 10px;
+   margin-bottom: 5px;
+   transition: var(--transitoin);
+   font-size: 16px;
+   align-items: center;
+   font-weight: 400;
+}
+.side-bar ul li a i {
+   font-size: 20px;
+}
+.side-bar ul li a span {
+   margin-left: 10px;
+}
+.side-bar ul li a.active,
+.side-bar ul li a:hover {
+   background-color: var(--color-one);
+   /* border-radius: 10px; */
+}
+@media (max-width: 767px) {
+   .side-bar {
+      width: 55px;
+      padding: 7px;
+   }
+   .side-bar h3 {
+      font-size: 10px;
+      margin-bottom: 20px;
+      padding: 0;
+   }
+   .side-bar ul li a {
+      justify-content: center;
+      align-items: center;
+   }
+   .side-bar ul li a span {
+      display: none;
+   }
+}
+
+/* CONTENT...........................*/
+.content {
+   width: 100%;
+   /* overflow: hidden; */
+}
+.content .header {
+   padding: 15px;
+}
+.content .header .search {
+   position: relative;
+   margin-left: 5px;
+}
+.content .header .search::before {
+   font-family: "font awesome 5 free";
+   content: "\f002";
+   font-weight: 900;
+   color: var(--grey-color);
+   font-size: 15px;
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.content .header .search input[type="search"] {
+   width: 160px;
+   padding: 10px;
+   transition: var(--transitoin);
+   border: 1px solid #ccc;
+   padding-left: 35px;
+}
+.content .header .search input[type="search"]:focus {
+   width: 200px;
+}
+.content .header .search input[type="search"]:focus::placeholder {
+   opacity: 0;
+}
+@media (max-width: 767px) {
+   .content .header .search input[type="search"] {
+      width: 130px;
+      padding: 8px;
+      transition: var(--transitoin);
+      border: 1px solid #ccc;
+      padding-left: 30px;
+   }
+   .content .header .search input[type="search"]:focus {
+      width: 145px;
+   }
+   .content .header .search::before {
+      font-size: 13px;
+   }
+}
+.content .icons span {
+   padding: 6px;
+   border-radius: 50%;
+   position: relative;
+   margin-right: 10px;
+   cursor: pointer;
+   margin-top: 3px;
+}
+.content .icons span::before {
+   content: "";
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   background-color: red;
+   border-radius: 50%;
+   top: 0;
+   right: 0;
+}
+.content .icons span i {
+   font-size: 22px;
+}
+.content .icons img {
+   width: 32px;
+   cursor: pointer;
+}
+.content .icons a {
+   display: block;
+   margin: 0 20px;
+   font-size: 17px;
+   font-weight: bold;
+   color: black;
+   background-color: #f1f5f9;
+   padding: 10px 30px;
+   border-radius: 50px;
+   border: 2px solid #ddd;
+}
+.content .icons a:hover {
+   background-color: #eee;
+   border: 2px solid #ddd;
+   transition: 0.3s;
+}
+@media (max-width: 767px) {
+   .content .icons a {
+      margin: 0 8px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+   }
+}
+/* DASHBOARD................. */
+h1 {
+   margin: 25px 25px 40px;
+   position: relative;
+}
+h1::before,
+h1::after {
+   content: "";
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   height: 4px;
+   border-radius: 10px;
+}
+h1::before {
+   width: 130px;
+   background-color: white;
+}
+h1::after {
+   width: 50px;
+   background-color: black;
+}
+
+/* content  ............*/
+.content form {
+   margin: 25px;
+}
+
+form .lab-title,
+form .lab-document,
+form .lab-comment,
+form .lab-image,
+form .lab-date {
+   display: block;
+   text-transform: capitalize;
+   font-size: 20px;
+   font-weight: 500;
+   margin-top: 12px;
+}
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form .title-area,
+form .title-comment,
+form .document-area {
+   width: 420px;
+   padding: 8px;
+   border-radius: 8px;
+   border: 2px solid #ddd;
+}
+
+form input[type="file"] {
+   display: none;
+}
+form .input-file {
+   display: block;
+   border: 2px solid #ddd;
+   padding: 10px;
+   width: 230px;
+   text-align: center;
+   margin-top: 12px;
+   border-radius: 8px;
+   background-color: white;
+   font-weight: 500;
+}
+form .input-file i {
+   padding-right: 10px;
+   font-size: 19px;
+}
+form .input-file:hover {
+   cursor: pointer;
+   background-color: #eee;
+   border: 2px solid #777;
+   transition: 0.3s;
+}
+
+form .button {
+   margin-top: 20px;
+}
+form .button input[type="submit"],
+form .button .btn-update,
+form .button .btn-delete {
+   width: 130px;
+   padding: 10px 0;
+   margin-right: 10px;
+   font-size: 15px;
+   font-weight: 600;
+   border: 2px solid #ddd;
+   background-color: white;
+   border-radius: 8px;
+}
+form .button input[type="submit"]:hover,
+form .button .btn-update:hover,
+form .button .btn-delete:hover {
+   cursor: pointer;
+   background-color: #eee;
+   border: 2px solid #777;
+   transition: 0.5s;
+}
+@media (max-width: 767px) {
+   form input[type="email"],
+   form input[type="password"],
+   form input[type="number"],
+   form input[type="date"],
+   form .title-area,
+   form .title-comment,
+   form .document-area {
+      width: 300px;
+   }
+}
+@media (max-width: 767px) {
+   form .button input[type="submit"],
+   form .button .btn-update,
+   form .button .btn-delete {
+      width: 90px;
+      padding: 10px 0;
+      margin-right: 7px;
+      font-size: 14px;
+   }
+}

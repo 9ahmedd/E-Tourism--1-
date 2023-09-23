@@ -1,0 +1,220 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Small */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.register {
+    background-image: url(/E-Tourism/Images/WhatsApp\ Image\ 2023-04-10\ at\ 6.15.13\ PM.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.register .container {
+    position: relative;
+   margin-left: 22%;
+}
+ h3 {
+     padding-top: 30px;
+     padding-bottom: 20px;
+     text-align: center;
+     font-weight: bold;
+     color: #eee;
+     font-size: 30px;
+ } 
+/* form {
+    margin: 25px;
+} */
+
+form .lab-name {
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .name {
+    display: flex;
+}
+
+form .name .first {
+    padding-right: 20px;
+ 
+}
+
+form .name input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"] {
+    padding: 8px;
+    border-radius: 8px;
+    width: 363px;
+    border: 2px solid #ddd;
+    margin-top: 10px;
+}
+.f-name,
+.l-name {
+    margin-top: 5px;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"] {
+    width: 750px;
+    margin-top: 10px;
+}
+
+form .name label {
+    display: block;
+    font-size: 14px;
+}
+
+form .lab-email,
+form .lab-password,
+form .lab-country,
+form .lab-phone,
+form .lab-gender,
+form .lab-date {
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+form .form-select {
+    padding: 8px;
+    border-radius: 8px;
+    width: 750px;
+    border: 2px solid #ddd;
+    
+    display: block;
+    margin-top: 10px;
+}
+.lab-gender {
+    margin-bottom: 5px;
+  
+}
+form .gender-la span {
+    font-size: 18px;
+    padding: 2px;
+    margin-right: 30px;
+    font-weight: 400;
+   
+}
+
+form .button {
+    margin-top: 20px;
+}
+
+form .button input[type="submit"]{
+background-color: rgb(193, 75, 75);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    margin-top: 10px;
+    width: 400px;
+  margin-left: 175px;
+}
+
+form .button input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(127, 50, 50);
+    transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+    form .name input[type="text"] {
+        width: 140px;
+    }
+
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="number"],
+    form input[type="date"] {
+        width: 300px;
+    }
+
+    form .form-select {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    form .button input[type="submit"]
+  {
+        width: 90px;
+        padding: 10px 0;
+        margin-right: 7px;
+        font-size: 14px;
+    }
+}
+label {
+font-weight: 600 !important;
+}
+.s-g {
+    font-weight: 400 !important;
+  
+}

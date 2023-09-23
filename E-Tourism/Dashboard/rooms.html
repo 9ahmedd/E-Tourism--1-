@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="../CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/framework.css">
+        <link rel="stylesheet" href="CSS/rooms.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex">
+            <!-- SIDE BAR............... -->
+            <div class="side-bar">
+                <h3 class="p-10" >Egypt Tour</h3>
+                <ul>
+                    <li>
+                        <a class=" rad-10" href="Users.html">
+                            <i class="fa-solid fa-user fa-fw"></i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" rad-10" href="blog.html">
+                            <i class="fa-solid fa-chart-bar fa-fw"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rad-10" href="hotels.html">
+                            <i class="fa-solid fa-hotel"></i>
+                            <span>Hotels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rad-10" href="reservation.html">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Reservation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rad-10" href="restaurants.html">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Restaurants</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active rad-10" href="rooms.html">
+                            <i class="fa-solid fa-door-open"></i>
+                            <span>Rooms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rad-10 " href="gov.html">
+                            <i class="fa-solid fa-circle-user fa-fw"></i>
+                            <span>Government</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- CONTENT.............. -->
+            <div class="content">
+                <!-- HEADER............... -->
+                <div class="header bg-white between-flex">
+                    <div class="search">
+                        <input class=" rad-10" type="search" placeholder="Type A Keyword">
+                    </div>
+                    <div class="icons center-flex">
+                        <span class="notification ">
+                            <i class="fa-regular fa-bell"></i>
+                        </span>
+                        <img src="../Images/avatar.png" alt="">
+                        <a href="../index.html">Log Out</a>
+                    </div>
+                </div>
+                <!-- DASHBOARD...................... -->
+                <h1>Rooms</h1>
+                <form action="">
+                    <label for="" class="lab-room-num">Room Number</label>
+                    <input type="number" name="" id="">
+                    <label for="" class="lab-type">Type</label>
+                    <label class="type-la" for="single">
+                        <input type="radio" name="gender" id="single" value="sdsdsds">
+                        <span>Single</span>
+                    <label class="type-la" for="double">
+                        <input type="radio" name="gender" id="double" value="sdsdsds">
+                        <span>double</span>
+                    <label class="type-la" for="triple">
+                        <input type="radio" name="gender" id="triple" value="sdsdsds">
+                        <span>triple</span>
+                    <label class="type-la" for="king">
+                        <input type="radio" name="gender" id="king" value="sdsdsds">
+                        <span>king</span>
+                    </label>
+                    <label for="" class="lab-price">Price</label>
+                    <input type="number" name="" id="">
+                    <label for="" class="lab-people">Max People</label>
+                    <input type="number" name="" id="">
+                    <label for="" class="lab-facilities">facilities</label>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="one">
+                        <label class="check-la" for="one">Bar</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="two">
+                        <label class="check-la" for="two">Conference and Meeting Facilities</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="three">
+                        <label class="check-la" for="three">Fitness Room</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="four">
+                        <label class="check-la" for="four">Sauna</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="five">
+                        <label class="check-la" for="five">Non-smoking Rooms</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="six">
+                        <label class="check-la" for="six">Pet Friendly</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="seven">
+                        <label class="check-la" for="seven">Restaurant</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="" id="eight">
+                        <label class="check-la" for="eight">WI-FI</label>
+                    </div>
+                    <label class="lab-image" for="">Image</label>
+                    <input type="file" name="" id="file">
+                    <label class="input-file" for="file"><i class="fa-regular fa-image"></i>Choose Image</label>
+                    <div class="button">
+                        <input type="submit" value="Create">
+                        <button class="btn-update">Update</button>
+                        <button class="btn-delete" >Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/JS/main.js"></script>
+    </body>
+</html>
